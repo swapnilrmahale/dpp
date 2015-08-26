@@ -1,0 +1,65 @@
+body {
+	background-color: darkgray;
+}
+
+.menu{
+	position: fixed;
+	width: 10vw;
+	height: 80vh;
+	/* border: 1px solid red; */
+	top: 10vh;
+	background-color: transparent;
+	box-shadow: 0px 0px 5px 5px grey;
+	z-index: 1;
+}
+
+.menu:hover #slide {
+    transition: 1s;
+    left: 0;
+}
+
+#slide {
+    position: absolute;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition: 1s;
+}
+
+#lMenu {
+	left: 2vw;
+	border-radius: 0vw 3vw 3vw 0vw;
+}
+
+#rMenu {
+	left: 88vw;
+	border-radius: 3vw 0vw 0vw 3vw;
+}
+
+.hide {
+  	display: none;
+}
+
+.main {
+	position: fixed;
+	width: 96vw;
+	height: 80vh;
+	left: 2vw;
+	top: 10vh;
+	background-color: white;
+	box-shadow: 0px 0px 5px 5px grey;
+	border-radius: 3vw 3vw 3vw 3vw;
+}
+
+.main1 {
+	position: fixed;
+	width: 72vw;
+	height: 80vh;
+	left: 14vw;
+	top: 10vh;
+	background-color: white;
+	box-shadow: 0px 0px 5px 5px grey;
+	border-radius: 3vw 3vw 3vw 3vw;
+}
+
