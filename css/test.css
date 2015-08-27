@@ -52,6 +52,12 @@ body {
 	border-radius: 3vw 3vw 3vw 3vw;
 }
 
+.input {
+	border: 1px solid red;
+	height: 100%;
+	padding: 5px;
+}
+
 .main1 {
 	position: fixed;
 	width: 72vw;

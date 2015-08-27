@@ -34,8 +34,113 @@
 		
 	</section>
 	
-	<section id="input" class="main">
-		
+	<section id="input" class="main container" ng-controller="UserController">
+		<form name="newUser" ng-submit="add()">
+			<section id="input1" class="col-md-4 input container">
+				<div id="name" class="row">
+					<div class="form-group col-md-6">
+						<label for="firstname">First Name</label>
+						<input type="text" class="form-control" id="firstname" placeholder="First Name" ng-model="user.name.first">
+					</div>
+					<div class="form-group col-md-6">
+						<label for="lastname">Last Name</label>
+						<input type="text" class="form-control" id="lastname" placeholder="Last Name" ng-model="user.name.last">
+					</div>	
+				</div>
+				
+				<div id="row2" class="row">
+					<div class="form-group col-md-6">
+						<label for="gender">Gender</label><br/>
+						<label class="radio-inline">
+							<input type="radio" name="gender" id="m" value="m">Male
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="gender" id="f" value="f">Female
+						</label>
+					</div>
+
+					<div class="form-group col-md-6">
+						<label for="bday">Birthday</label>
+	  					<input type="date" class="form-control" name="bday" id="bday" ng-model="user.dob">
+					</div>	
+				</div>
+
+				<div id="row3" class="row">
+					<div class="form-group col-md-6">
+						<label for="country">Country</label>
+				 		<select id="country" class="form-control" ng-model="user.address.country">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="state">State</label>
+				 		<select id="state" class="form-control" ng-model="user.address.state">
+							<option>A</option>
+							<option>B</option>
+							<option>C</option>
+							<option>D</option>
+							<option>E</option>
+						</select>
+					</div>
+				</div>
+
+				<div id="row4" class="row">
+					<div class="form-group col-md-6">
+						<label for="district">District</label>
+				 		<select id="district" class="form-control" ng-model="user.address.district">
+							<option>P</option>
+							<option>Q</option>
+							<option>R</option>
+							<option>S</option>
+							<option>T</option>
+						</select>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="city">City</label>
+						<input type="text" class="form-control" id="city" placeholder="City" ng-model="user.address.city">
+					</div>
+				</div>
+
+				<div id="row5" class="row">
+					<div class="form-group col-md-12">
+						<label for="address1">Address Line 1</label>
+						<input type="text" class="form-control" id="address1" placeholder="Address Line 1" ng-model="user.address.line1">
+					</div>
+				</div>
+				
+				<div id="row6" class="row">
+					<div class="form-group col-md-12">
+						<label for="address2">Address Line 2</label>
+						<input type="text" class="form-control" id="address2" placeholder="Address Line 2" ng-model="user.address.line2">
+					</div>
+				</div>
+
+				<div id="row7" class="row">
+					<div class="form-group col-md-6">
+						<label for="mobile">Mobile No.</label>
+						<input type="text" class="form-control" id="mobile" placeholder="Mobile No." ng-model="user.mobile.primary">
+					</div>
+
+					<div class="form-group col-md-6">
+						<label for="mobile2">Alternate Mobile No.</label>
+						<input type="text" class="form-control" id="mobile2" placeholder="Mobile No." ng-model="user.mobile.secondary">
+					</div>
+				</div>
+
+				<input type="submit" name="submit" class="btn btn-success" value="Submit"></input>
+			</form>
+		</section>
+
+		<section id="input2" class="col-md-4 input container">
+			
+		</section>
+		<section id="input3" class="col-md-4 input container">
+			
+		</section>
 	</section>
 
 	<script

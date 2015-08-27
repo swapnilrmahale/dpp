@@ -1,4 +1,5 @@
 var login = angular.module('login', []);
+var user = angular.module('user', []);
 
 login.controller('LoginController', function($scope) {
 	
@@ -13,4 +14,14 @@ login.controller('LoginController', function($scope) {
 
 });
 
-var app = angular.module('pdp', ['login']);
+login.controller('UserController', function($scope) {
+	
+	$scope.add = function() {
+		console.log($scope.user.name);	
+		console.log($scope.user.dob);
+		console.log($scope.user.mobile);
+		console.log($scope.user.address);
+	}
+});
+
+var app = angular.module('pdp', ['login', 'user']);
