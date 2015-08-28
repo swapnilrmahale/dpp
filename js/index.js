@@ -11,6 +11,9 @@ $(function() {
       			});*/
       			console.log('showing');
       			$('section.li').show();
+
+
+            
       		}
     	});
 	});
