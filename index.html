@@ -1,70 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="pdp">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title></title>
-
     <!-- Bootstrap -->
-    <link
-	    href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css"
-	    rel="stylesheet">
-	
-    <link
-	    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
-	    rel="stylesheet">
-	
+    <link href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <!-- link href="css/bootstrap-multiselect.css" rel="stylesheet" /-->
-
-    <link
-	    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.14.30/css/bootstrap-datetimepicker.min.css"
-	    rel="stylesheet">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.14.30/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-
 </head>
+
 <body>
-	<section class="container">
-		<section class="first choose">
-
-			1
-
-		</section>
-		<section class="second choose">
-
-			2
-
-		</section>
-		<section class="third choose">
-
-			3
-
-		</section>
-
-		<section class="login container" ng-controller="LoginController">
-			<div class="dp"></div>
-			
-			<form name="login" novalidate ng-submit="logMeIn(login.$valid)">
-				<input type="text" name="id" ng-model="id" class="id input form-control" placeholder="Enter your Username" ng-minlength="3" required ></input>
-				<p ng-show="login.id.$invalid && isSubmitted">Username is Required</p>
-				<p ng-show="login.id.$dirty && login.id.$error.minlength">Username Must Be More Than 3 Characters</p>
-				<br/>
-				<input type="password" name="password" ng-model="password" class="password input form-control" placeholder="Enter your Password" ng-minlength="6" required></input>
-				<p ng-show="login.password.$invalid && isSubmitted">Password is Required</p>
-				<p ng-show="login.password.$dirty && login.password.$error.minlength">Password Must Be More Than 6 Characters</p>
-				<br/>
-				<input type="submit" name="submit" class="btn submit" ng-class="{'btn-success' : login.id.$valid || login.password.$valid, 'btn-danger' : login.id.$invalid || login.password.$invalid}" value="Log In"></input>
-			</form>
-		</section>
-	</section>
-	
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
-	<script src="js/index.js" type="text/javascript"></script>
-	<script src="js/angular.custom.js" type="text/javascript"></script>
-
+    <section class="container">
+        <section class="first choose">
+            1
+        </section>
+        <section class="second choose">
+            2
+        </section>
+        <section class="third choose">
+            3
+        </section>
+        <section class="login container" ng-controller="LoginController">
+            <div class="dp"></div>
+            <form name="login" novalidate ng-submit="logMeIn(login.$valid)">
+                <input type="text" name="id" ng-model="id" class="id input form-control" placeholder="Enter your Username" ng-minlength="3" required></input>
+                <p ng-show="login.id.$invalid && isSubmitted">Username is Required</p>
+                <p ng-show="login.id.$dirty && login.id.$error.minlength">Username Must Be More Than 3 Characters</p>
+                <br/>
+                <input type="password" name="password" ng-model="password" class="password input form-control" placeholder="Enter your Password" ng-minlength="6" required></input>
+                <p ng-show="login.password.$invalid && isSubmitted">Password is Required</p>
+                <p ng-show="login.password.$dirty && login.password.$error.minlength">Password Must Be More Than 6 Characters</p>
+                <br/>
+                <input type="submit" name="submit" class="btn submit" ng-class="{'btn-success' : login.id.$valid || login.password.$valid, 'btn-danger' : login.id.$invalid || login.password.$invalid}" value="Log In"></input>
+            </form>
+        </section>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/angular.custom.js" type="text/javascript"></script>
 </body>
+
 </html>
