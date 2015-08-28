@@ -1,61 +1,36 @@
 body {
-    background-color: darkgray;
+    background-color: #C0D900;
 }
 
 .menu {
     position: fixed;
-    width: 10vw;
-    height: 80vh;
+    width: 98vw;
+    height: 8vh;
     /* border: 1px solid red; */
-    top: 10vh;
-    background-color: transparent;
+    top: 0vh;
+    left: 1vw;
+    background-color: #159E8E;
     box-shadow: 0px 0px 5px 5px grey;
     z-index: 1;
-}
-
-.menu:hover #slide {
-    transition: 1s;
-    left: 0;
-}
-
-#slide {
-    position: absolute;
-    left: -100px;
-    width: 100px;
-    height: 100px;
-    background: blue;
-    transition: 1s;
-}
-
-#lMenu {
-    left: 2vw;
-    border-radius: 0vw 3vw 3vw 0vw;
-}
-
-#rMenu {
-    left: 88vw;
-    border-radius: 3vw 0vw 0vw 3vw;
-}
-
-.hide {
-    display: none;
+    border-radius: 0vw 0vw 3vw 3vw;
 }
 
 .main {
     position: fixed;
-    width: 96vw;
+    width: 98vw;
     height: 80vh;
-    left: 2vw;
+    left: 1vw;
     top: 10vh;
     background-color: white;
     box-shadow: 0px 0px 5px 5px grey;
     border-radius: 3vw 3vw 3vw 3vw;
+    padding: 1vh 1vw 1vh 1vw;
 }
 
 .input {
     border: 1px solid red;
     height: 100%;
-    padding: 5px;
+    padding: 1vh 1vw 1vh 1vw;
 }
 
 .main1 {
@@ -67,4 +42,8 @@ body {
     background-color: white;
     box-shadow: 0px 0px 5px 5px grey;
     border-radius: 3vw 3vw 3vw 3vw;
+}
+
+#row7 {
+    text-align: center;
 }
