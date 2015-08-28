@@ -15,8 +15,10 @@
 </head>
 
 <body>
-    <section class="menu">
+    <section class="menu title">
     </section>
+    <header class="title header">
+    </header>
     <section id="input" class="main container" ng-controller="UserController">
         <form name="newUser" ng-submit="add()">
             <section id="input1" class="col-md-3 input container">
@@ -96,7 +98,7 @@
                         <input type="text" class="form-control" id="mobile" placeholder="Mobile No." ng-model="user.mobile.primary">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="mobile2">Alternate Mobile No.</label>
+                        <label for="mobile2">Other Mobile No.</label>
                         <input type="text" class="form-control" id="mobile2" placeholder="Mobile No." ng-model="user.mobile.secondary">
                     </div>
                 </div>

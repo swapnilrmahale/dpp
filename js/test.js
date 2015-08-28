@@ -5,11 +5,15 @@ function mouseMoveHandler(e) {
 	if (e.pageY < 50) { // add hover condition
     	clearTimeout(menuTimeout);
     	menuTimeout = null;
-      $('.menu').slideDown('slow', function() {});
-
+      $('.header').slideUp('slow', function() {
+        $('.menu').slideDown('900', function() {});  
+      });
+      
   	} else if (menuTimeout === null) {
     	menuTimeout = setTimeout(function() {
-        $('.menu').slideUp('slow', function() {});
+        $('.menu').slideUp('', function() {
+          $('.header').slideDown('900', function() {});
+        });        
       }, 1000);
   }
 }
